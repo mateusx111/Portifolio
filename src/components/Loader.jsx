@@ -5,7 +5,7 @@ export const Loader = () => {
       <div className="flex justify-center items-center">
         <div
           className="w-20 h-20 border-opacity-20 border-blue-500 border-t-500
-      rounded-full animate-spin"
+      rounded-full animate-spin "
         ></div>
       </div>
     </Html>
