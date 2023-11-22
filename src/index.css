@@ -162,7 +162,7 @@ body:has(.card[data-color="green"]:hover) {
 }
 
 .block-container:hover > .btn-front {
-  transform: translateZ(80px) translateY(-5px) rotateX(15deg) rotateY(15deg);
+  transform: translateZ(150px) translateY(-9px) rotateX(20deg) rotateY(20deg);
 }
 
 /* Neo Brutalism */
