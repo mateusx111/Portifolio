@@ -59,19 +59,23 @@ export const Island = ({
     }
   };
 
-  const handleKeyUp = (e) => {
-    if (e.key === "ArrowUp" || e.key === "ArrowDown") {
+  const handleKeyUp = (event) => {
+    if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
       setIsRotating(false);
     }
   };
 
-  const handleKeyDown = (e) => {
-    if (e.key === "Arrowleft") {
+  const handleKeyDown = (event) => {
+    if (event.key === "ArrowLeft") {
       if (!isRotating) setIsRotating(true);
-      islandRef.current.rotation.y += 0.01 * Math.PI;
-    } else if (e.key === "ArrowRight") {
+
+      islandRef.current.rotation.y += 0.004 * Math.PI;
+      rotationSpeed.current = 0.007;
+    } else if (event.key === "ArrowRight") {
       if (!isRotating) setIsRotating(true);
-      islandRef.current.rotation.y -= 0.01 * Math.PI;
+
+      islandRef.current.rotation.y -= 0.004 * Math.PI;
+      rotationSpeed.current = -0.007;
     }
   };
 
@@ -79,7 +83,7 @@ export const Island = ({
     if (!isRotating) {
       rotationSpeed.current *= dampingFactor;
 
-      if (Math.abs(rotationSpeed.current) < 0.001) {
+      if (Math.abs(rotationSpeed.current) < 0.0001) {
         rotationSpeed.current = 0;
       }
 

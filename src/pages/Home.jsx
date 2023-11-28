@@ -28,7 +28,7 @@ export const Home = () => {
     let screenScale, screenPosition;
 
     if (window.innerWidth < 768) {
-      screenScale = [1, 1, 1];
+      screenScale = [1.5, 1.5, 1.5];
       screenPosition = [0, -1.5, 0];
     } else {
       screenScale = [3, 3, 3];
@@ -74,8 +74,8 @@ export const Home = () => {
           <Plane
             isRotating={isRotating}
             rotation={[0, 20, 0]}
-            planeScale={planeScale}
-            planePosition={planePosition}
+            scale={planeScale}
+            position={planePosition}
           />
         </Suspense>
       </Canvas>
