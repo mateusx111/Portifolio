@@ -27,6 +27,14 @@ export const Navbar = () => {
         >
           Projetos
         </NavLink>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            isActive ? "text-blue-500" : "text-black"
+          }
+        >
+          Contato
+        </NavLink>
       </nav>
     </header>
   );

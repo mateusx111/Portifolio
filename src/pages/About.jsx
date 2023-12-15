@@ -12,7 +12,6 @@ export const About = () => {
       <h1 className="head-text">
         Olá, meu nome é{" "}
         <span className="blue-gradient_text font-bold drop-shadow">Mateus</span>
-        😜
       </h1>
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
@@ -59,7 +58,6 @@ export const About = () => {
         </div>
 
         <div className="mt-12 flex">
-          [ ]
           <VerticalTimeline>
             {experiences.map((experiences) => (
               <VerticalTimelineElement

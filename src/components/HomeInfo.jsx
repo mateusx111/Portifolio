@@ -14,29 +14,32 @@ const InfoBox = ({ text, link, btnText }) => (
 
 const renderContent = {
   1: (
-    <InfoBox
-      text="Olá! Eu sou o Mateus. Sou desenvolvedor front-end 💻"
-      link="/about"
-      btnText="Sobre mim"
-    />
+    <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5">
+      Oi, eu sou
+      <span className="font-semibold mx-2 text-white">Mateus</span>
+      👋
+      <br />
+      Um desenvolvedor web Frontend
+    </h1>
   ),
   2: (
     <InfoBox
-      text="Estou procurando por um emprego. Aqui esta minha "
+      text="Trabalhei em vários projetos pessoais adquiri e aprendi muitas habilidades ao longo do caminho"
       link="/about"
       btnText="Saiba mais"
     />
   ),
   3: (
     <InfoBox
-      text="Trabalhei em vários projetos ao longo dos meus estudos. Venha conferir!"
+      text="Alguns dos meus projetos ao longo do caminho. Vamos conferir?"
       link="/projects"
       btnText="Visite meu portifólio"
     />
   ),
   4: (
     <InfoBox
-      text="Está precisando um projeto ou procurando por dum Dev?estou a apenas algumas teclas de distância"
+      text="Está precisando um projeto ou procurando por um Dev? estou a apenas algumas teclas de
+       distância"
       link="/contact"
       btnText="Vamos conversar"
     />

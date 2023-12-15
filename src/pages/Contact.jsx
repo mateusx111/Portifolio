@@ -7,6 +7,15 @@ import { useAlert } from "../hooks/useAlert";
 import { Alert } from "../components/Alert";
 import { Loader } from "../components/Loader";
 
+import {
+  WhatsappShareButton,
+  WhatsappIcon,
+  LinkedinShareButton,
+  LinkedinIcon,
+  EmailShareButton,
+  EmailIcon,
+} from "next-share";
+
 export const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -56,7 +65,7 @@ export const Contact = () => {
               email: "",
               message: "",
             });
-          }, [3000]);
+          }, [2000]);
         },
         (error) => {
           setLoading(false);
@@ -76,8 +85,8 @@ export const Contact = () => {
     <section className="relative flex lg:flex-row flex-col max-container h-[100vh]">
       {alert.show && <Alert {...alert} />}
 
-      <div className="flex-1 min-w-[50%] flex flex-col">
-        <h1 className="head-text">Entrar em contato</h1>
+      <div className="flex-1 w-full flex flex-col">
+        <h1 className="text-4xl font-bold">Entrar em contato</h1>
 
         <form
           ref={formRef}
@@ -135,6 +144,25 @@ export const Contact = () => {
           >
             {loading ? "Enviando..." : "Enviar"}
           </button>
+          <div className="flex flex-col gap-2 justify-center items-center ">
+            <div className="flex gap-2 h-10">
+              <LinkedinShareButton
+                url={"https://www.linkedin.com/in/mateus-s-santos-8b89791b6/"}
+              >
+                <LinkedinIcon size={42} round />
+              </LinkedinShareButton>
+
+              <WhatsappShareButton
+                url={"https://api.whatsapp.com/send?phone=5596981032876"}
+                separator=":: "
+              >
+                <WhatsappIcon size={42} round />
+              </WhatsappShareButton>
+            </div>
+            <div className="text-slate-900 font-semibold text-xl">
+              msouza954@gmail.com - (96) 98103-2876
+            </div>
+          </div>
         </form>
       </div>
 
