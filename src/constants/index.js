@@ -166,6 +166,22 @@ export const projects = [
     link: "https://dt-money-nine-fawn.vercel.app",
   },
   {
+    iconUrl: motion,
+    theme: "btn-back-pink",
+    name: "3D Shirt",
+    description:
+      "Projeto para a customização de camisa em 3D podendo mudar a cor da camisa e sua textura.",
+    link: "https://3-d-shirt-zeta.vercel.app/",
+  },
+  {
+    iconUrl: threads,
+    theme: "btn-back-pink",
+    name: "New Form",
+    description:
+      "Formulário completo criado com as tecnologias mais atuais do mercado desenvolvimento frontend.",
+    link: "https://new-form-kappa.vercel.app/",
+  },
+  {
     iconUrl: threads,
     theme: "btn-back-green",
     name: "HiLink",
@@ -188,21 +204,5 @@ export const projects = [
     description:
       "Projeto trazendo o feed de uma redes sociais com o fum ade aprender as basses da tecnologia reactJS",
     link: "https://my-feed-reod.vercel.app/",
-  },
-  {
-    iconUrl: motion,
-    theme: "btn-back-pink",
-    name: "3D Shirt",
-    description:
-      "Projeto para a customização de camisa em 3D podendo mudar a cor da camisa e sua textura.",
-    link: "https://3-d-shirt-zeta.vercel.app/",
-  },
-  {
-    iconUrl: threads,
-    theme: "btn-back-pink",
-    name: "New Form",
-    description:
-      "Formulário completo criado com as tecnologias mais atuais do mercado desenvolvimento frontend.",
-    link: "https://new-form-kappa.vercel.app/",
   },
 ];
