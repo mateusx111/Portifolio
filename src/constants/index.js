@@ -189,4 +189,12 @@ export const projects = [
       "Projeto trazendo o feed de uma redes sociais com o fum ade aprender as basses da tecnologia reactJS",
     link: "https://my-feed-reod.vercel.app/",
   },
+  {
+    iconUrl: git,
+    theme: "btn-back-pink",
+    name: "3D Shirt",
+    description:
+      "Projeto para a customização de camisa em 3D podendo mudar a cor da camisa e sua textura.",
+    link: "https://3-d-shirt-zeta.vercel.app/",
+  },
 ];
