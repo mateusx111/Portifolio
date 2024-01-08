@@ -4,7 +4,7 @@ import { arrow } from "../assets/icons";
 import { CTA } from "../components/CTA";
 export const Projects = () => {
   return (
-    <section className="max-container h-screen">
+    <section className="max-container h-full">
       <h1 className="head-text">
         Meus{" "}
         <span className="blue-gradient_text font-bold drop-shadow">
