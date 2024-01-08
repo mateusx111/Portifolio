@@ -190,11 +190,19 @@ export const projects = [
     link: "https://my-feed-reod.vercel.app/",
   },
   {
-    iconUrl: git,
+    iconUrl: motion,
     theme: "btn-back-pink",
     name: "3D Shirt",
     description:
       "Projeto para a customização de camisa em 3D podendo mudar a cor da camisa e sua textura.",
     link: "https://3-d-shirt-zeta.vercel.app/",
+  },
+  {
+    iconUrl: threads,
+    theme: "btn-back-pink",
+    name: "New Form",
+    description:
+      "Formulário completo criado com as tecnologias mais atuais do mercado desenvolvimento frontend.",
+    link: "https://new-form-kappa.vercel.app/",
   },
 ];
